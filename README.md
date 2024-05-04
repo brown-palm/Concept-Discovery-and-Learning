@@ -2,7 +2,7 @@
 Code for the paper `Pre-trained Vision-Language Models Learn Discoverable Concepts`
 ## Set up environments
 ```
-conda create --name labo python=3.9
+conda create --name labo python=3.9.16
 conda activate cdl
 conda install --file requirements.txt
 ```
