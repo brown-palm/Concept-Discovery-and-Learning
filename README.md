@@ -36,7 +36,7 @@ In the root directory
 - ```python pre_img_embedding.py {dataset} {learn} {epoch} ``` to pre-compute the image embeddings with CLIP
 - ```python select_concepts.py {dataset} {shot} {time_concept} {learn}``` to select a compact and performant set of concepts
 - ```python nway.py {dataset} {shot} {time_concept} {learn} {epoch}``` to perform few-shot classification
-
+- ```python classification.py {dataset} {epoch}``` to perform the concept-based classification with the fine-tuned CLIP
 - for the arguments
   - `dataset` means the dataset to use
   - `shot` means the few-shot setting, can be 1,2,4,8,16 or all 
@@ -48,4 +48,5 @@ In the root directory
 In the `concept_learning` directory
 - ```python predict_labels.py {dataset}``` to generate pseudo labels for the training images
 - ```python train_clip.py {dataset}``` to fine-tune the CLIP model for concept learning
+
 
