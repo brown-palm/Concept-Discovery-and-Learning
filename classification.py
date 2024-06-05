@@ -35,7 +35,7 @@ def main(args):
         cls_truth = np.load(os.path.join('..',args.dataset,'class_label.npy'))
         cls_truth = torch.Tensor(cls_truth).t()
         cls_truth = cls_truth.to(device)
-        cls_truth /= cls_truth.mean(dim=0)
+        cls_truth /= cls_truth.sum(dim=0)
         train_y = torch.load(os.path.join('..',args.dataset,'data','train_data_allshot.pt'))['label']
 
 
